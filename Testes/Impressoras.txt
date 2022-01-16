@@ -1,0 +1,12 @@
+Contadores Das Impressoras
+1° Semestre
+Impressora ; Contador
+Ricoh ; 150263.0
+Brother ; 64050.0
+Samsung ; 87000.0
+
+2° Semestre
+Impressora ; Contador
+Ricoh ; 155847.0
+Brother ; 80566.0
+Samsung ; 125689.0

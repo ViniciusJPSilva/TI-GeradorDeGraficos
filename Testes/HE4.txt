@@ -1,0 +1,150 @@
+﻿Histórico Escolar 4
+Notas do 1° Semestre
+Disciplina ; Nota
+Biologia ; 5.0
+Matemática ; 3.5
+Física ; 8.0
+Geografia ; 2.0
+Historia ; 10.0
+A ; 1.0
+B ; 2.0
+C ; 3.0
+D ; 4.0
+E ; 5.0
+F ; 6.0
+G ; 7.0
+
+Notas do 2° Semestre
+Disciplina ; Nota
+Biologia ; 10.0
+Matemática ; 2.0
+Física ; 7.5
+Geografia ; 6.0
+Historia ; 9.0
+A ; 1.0
+B ; 2.0
+C ; 3.0
+D ; 4.0
+E ; 5.0
+F ; 6.0
+G ; 7.0
+
+Notas do 3° Semestre
+Disciplina ; Nota
+Biologia ; 7.0
+Matemática ; 9.0
+Física ; 2.1
+Geografia ; 4.0
+Historia ; 6.5
+A ; 1.0
+B ; 2.0
+C ; 3.0
+D ; 4.0
+E ; 5.0
+F ; 6.0
+G ; 7.0
+
+Notas do 4° Semestre
+Disciplina ; Nota
+Biologia ; 7.0
+Matemática ; 9.0
+Física ; 2.1
+Geografia ; 4.0
+Historia ; 6.5
+A ; 1.0
+B ; 2.0
+C ; 3.0
+D ; 4.0
+E ; 5.0
+F ; 6.0
+G ; 7.0
+
+Notas do 5° Semestre
+Disciplina ; Nota
+Biologia ; 7.0
+Matemática ; 9.0
+Física ; 2.1
+Geografia ; 4.0
+Historia ; 6.5
+A ; 1.0
+B ; 2.0
+C ; 3.0
+D ; 4.0
+E ; 5.0
+F ; 6.0
+G ; 7.0
+
+Notas do 6° Semestre
+Disciplina ; Nota
+Biologia ; 7.0
+Matemática ; 9.0
+Física ; 2.1
+Geografia ; 4.0
+Historia ; 6.5
+A ; 1.0
+B ; 2.0
+C ; 3.0
+D ; 4.0
+E ; 5.0
+F ; 6.0
+G ; 7.0
+
+Notas do 7° Semestre
+Disciplina ; Nota
+Biologia ; 7.0
+Matemática ; 9.0
+Física ; 2.1
+Geografia ; 4.0
+Historia ; 6.5
+A ; 1.0
+B ; 2.0
+C ; 3.0
+D ; 4.0
+E ; 5.0
+F ; 6.0
+G ; 7.0
+
+Notas do 8° Semestre
+Disciplina ; Nota
+Biologia ; 7.0
+Matemática ; 9.0
+Física ; 2.1
+Geografia ; 4.0
+Historia ; 6.5
+A ; 1.0
+B ; 2.0
+C ; 3.0
+D ; 4.0
+E ; 5.0
+F ; 6.0
+G ; 7.0
+
+Notas do 9° Semestre
+Disciplina ; Nota
+Biologia ; 7.0
+Matemática ; 9.0
+Física ; 2.1
+Geografia ; 4.0
+Historia ; 6.5
+A ; 1.0
+B ; 2.0
+C ; 3.0
+D ; 4.0
+E ; 5.0
+F ; 6.0
+G ; 7.0
+
+Notas do 10° Semestre
+Disciplina ; Nota
+Biologia ; 7.0
+Matemática ; 9.0
+Física ; 2.1
+Geografia ; 4.0
+Historia ; 6.5
+A ; 1.0
+B ; 2.0
+C ; 3.0
+D ; 4.0
+E ; 5.0
+F ; 6.0
+G ; 7.0

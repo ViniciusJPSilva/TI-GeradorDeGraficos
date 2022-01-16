@@ -1,0 +1,8 @@
+Historico Escolar 3
+Notas 1° Semestre
+Disciplina;nota
+Biologia; 88.0
+
+Notas 2° Semestre
+Disciplina;nota
+Biologia; 50.0

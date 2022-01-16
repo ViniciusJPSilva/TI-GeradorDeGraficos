@@ -1,0 +1,198 @@
+package vjps.graficos.gui;
+
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Graphics;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+import javax.swing.JPanel;
+
+import vjps.graficos.Grafico;
+import vjps.graficos.ParDados;
+import vjps.graficos.Serie;
+
+/**
+ * Representa um painel de desenho usado para desenhar um gráfico de colunas.
+ * @author Vinícius
+ *
+ */
+public class ModeloGrafico extends JPanel {
+
+	private Grafico grafico;
+	private List<Color> coresSeries;
+
+	/**
+	 * Construtores: Define os dados que serão usados para construir o gráfico de colunas.
+	 */
+	
+	public ModeloGrafico(Grafico grafico) {
+		int valorMaximoRGB = 255;
+		
+		this.grafico = grafico;
+		this.coresSeries = new ArrayList<>();
+		
+		//Gera cores aleatórias para as colunas.
+		Random random = new Random();
+		for(int i=0; i < grafico.getSeriesDados().size(); i++)
+			coresSeries.add(new Color(random.nextInt(valorMaximoRGB), random.nextInt(valorMaximoRGB), random.nextInt(valorMaximoRGB)));
+	}
+	
+	/**
+	 * Desenha o gráfico com os dados. 
+	 */
+	@Override
+	protected void paintComponent(Graphics g) {
+		//Constantes de posicionamento.
+		int xEsquerda = 150, xDireita = 1000, yTopo = 50, yBase = 510, espacamentoEntreValoresEixoY = 45;
+		
+		final int distanciaPadrao = 10,
+				xMarcacao = 35, 
+				yMarcacao = yTopo + distanciaPadrao,
+				quantidadeSeries = grafico.getSeriesDados().size(),
+				quantidadeParesDeDados = grafico.getSeriesDados().get(0).getParesDados().size(),
+				divisaoEixoX = (xDireita - xEsquerda) / quantidadeParesDeDados,
+				divisaoEixoY = 10,
+				maxMarcacao = calcularMaximoMarcacao(), 
+				minMarcacao = calcularMinimoMarcacao(),
+				intervaloMarcacao = (maxMarcacao - minMarcacao) / divisaoEixoY,
+				espacamentoEntreColunas = (xDireita - xEsquerda) / quantidadeParesDeDados,
+				larguraColunas = (espacamentoEntreColunas - distanciaPadrao * 2) / quantidadeSeries,
+				tamanhoFonteTexto = 12;
+		
+		final float valorPorPixel = (float) intervaloMarcacao / espacamentoEntreValoresEixoY;
+	
+		super.paintComponent(g);
+	
+		g.setColor(Color.BLACK);
+		
+		// Desenha o eixo Y.
+		g.drawLine(xEsquerda, yTopo, xEsquerda, yBase);
+		
+		// Desenha o eixo X.
+		g.drawLine(xEsquerda, yBase, xDireita, yBase);
+
+		// Define a fonte usada para desenhar as marcações e os números do eixo Y e os nomes das colunas no eixo X. 
+		g.setFont(new Font(Font.DIALOG, Font.BOLD, tamanhoFonteTexto));
+
+		// Desenha as marcações dos números do eixo Y.
+		g.setColor(Color.LIGHT_GRAY);
+		for (int linhaMarcacao = yTopo + distanciaPadrao, numero = divisaoEixoY; numero >= 1; numero--, linhaMarcacao += espacamentoEntreValoresEixoY)		
+			g.drawLine(xEsquerda  - 3, linhaMarcacao, xDireita, linhaMarcacao);
+		
+		g.setColor(Color.BLACK);
+		// Desenha as marcações e escreve os nomes das colunas do eixo x.
+		for (int linhaMarcacao = xEsquerda, numero = 0; numero <= quantidadeParesDeDados; numero++, linhaMarcacao += divisaoEixoX) {	
+			g.drawLine(linhaMarcacao, yBase + 3, linhaMarcacao, yBase - 3);
+			
+			if(numero != quantidadeParesDeDados)
+				g.drawString(grafico.getSeriesDados().get(0).getParesDados().get(numero).getNome(), linhaMarcacao + distanciaPadrao, yBase + 15);
+		}
+
+		// Escreve os números do eixo Y.
+		g.drawString(String.format("%d", maxMarcacao), xEsquerda  - (xMarcacao + 5), yMarcacao);
+		for (int linhaRotulo = yMarcacao + espacamentoEntreValoresEixoY, numero = maxMarcacao - intervaloMarcacao; numero >= minMarcacao; numero-=intervaloMarcacao, linhaRotulo += espacamentoEntreValoresEixoY) 
+			g.drawString(String.format("%d", numero), xEsquerda  - (xMarcacao + 5), linhaRotulo);
+		
+		// Escreve o nome do eixo Y.
+		escreverNaVertical(grafico.getNomeDadoFloat(), 15, xEsquerda / 2, yTopo - 50, g);
+		
+		//Desenha as colunas e as legendas do gráfico.
+		for(int serie = 0; serie < quantidadeSeries; serie++) {
+			// Posição base para o desenho da coluna. Tem como inspiração o passo do parafuso, que é a distância entre as ranhuras do mesmo.
+			int passo = xEsquerda + distanciaPadrao + larguraColunas * serie,
+					distanciaLegenda = 20,
+					ladoQuadrado = distanciaLegenda - 5,
+					xLegenda = xDireita + distanciaPadrao * 2,
+					yLegenda = yTopo + 50 + (serie * distanciaLegenda);
+			
+			// Armazena os pares de dados em uma lista.
+			List<ParDados> paresDeDados = grafico.getSeriesDados().get(serie).getParesDados();
+			
+			g.setColor(Color.BLACK);
+			g.drawString(grafico.getSeriesDados().get(serie).getNomeSerie(), xLegenda + ladoQuadrado + distanciaPadrao, yLegenda + tamanhoFonteTexto);
+			
+			// Define a cor da coluna, baseado na série corrente.
+			g.setColor(coresSeries.get(serie));
+			
+			// Desenha o quadrado com a cor da legenda
+			g.fillRect(xLegenda, yLegenda, ladoQuadrado, ladoQuadrado);
+			
+			for(int par = 0; par < paresDeDados.size(); par++) {
+				// Calcula a altura da coluna conforme o valor do par de dados.
+				Float valor =  paresDeDados.get(par).getValor();
+				int altura =  (int) (((valor != null) ? valor - minMarcacao : 0) / valorPorPixel);
+						
+				// Desenha a coluna.
+				g.fillRect(passo + divisaoEixoX * par, yBase - altura, larguraColunas, (altura != 0) ? altura : 1);
+			}
+		}
+		
+	} // paintComponent
+
+	private void escreverNaVertical(String texto, int tamanhoDaFonte, int x, int y, Graphics g) {
+		
+	}
+
+	/**
+	 * Obtém o valor mais alto entre os pares de dados e retorna o valor arredondado para um inteiro maior.
+	 * @return Valor mais alto.
+	 */
+	private int calcularMaximoMarcacao() {
+		int maximo = 0; 
+		
+		for(Serie serie : grafico.getSeriesDados())
+			for(ParDados par : serie.getParesDados()) {
+				// Obtém o valor arredondado.
+				int valorArredondado = (int) Math.ceil(par.getValor());
+				
+				// Verifica se o valor atual é maior que o máximo.
+				maximo = (valorArredondado > maximo) ? valorArredondado : maximo;
+			}
+
+		int alcance = (maximo > 100) ? 100 : 10;
+		
+		// Tornando o valor máximo em um número múltimo de 10.
+		while(maximo % alcance != 0)
+			maximo++;
+		
+		return maximo;
+	}
+	
+	/**
+	 * Obtém o valor mais alto entre os pares de dados e retorna o valor arredondado para um inteiro maior.
+	 * @return Valor mais alto.
+	 */
+	private int calcularMinimoMarcacao() {
+		int minimo = 0; 
+		boolean primeiroValor = true;
+		
+		for(Serie serie : grafico.getSeriesDados())
+			for(ParDados par : serie.getParesDados()) {
+				// Obtém o valor arredondado.
+				int valorArredondado = (int) Math.ceil(par.getValor());
+				
+				if(primeiroValor) {
+					minimo = valorArredondado;
+					primeiroValor = false;
+				}
+				
+				// Verifica se o valor atual é maior que o máximo.
+				minimo = (valorArredondado < minimo) ? valorArredondado : minimo;
+			}
+
+		int alcance = (minimo > 100) ? 100 : 10;
+		
+		// Tornando o valor máximo em um número múltimo de 10.
+		while(minimo % alcance != 0)
+			minimo--;
+		
+		return minimo;
+	}
+
+	public List<Color> getCoresSeries() {
+		return coresSeries;
+	}
+	
+}// class GraficoColuna

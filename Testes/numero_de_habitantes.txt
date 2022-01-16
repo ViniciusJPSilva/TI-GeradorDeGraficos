@@ -1,0 +1,12 @@
+Número de habitantes por pais
+Número de habitantes
+País ; número de habitantes
+India ; 110995549
+China ; 81087915
+Brazil ; 11502225
+Japan ; 11467580
+Nigeria ; 11117358
+France ; 10768915
+Mexico ; 9739986
+Pakistan ; 9519263
+Bangladesh ; 9183122

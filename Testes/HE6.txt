@@ -1,0 +1,60 @@
+﻿Histórico Escolar 6
+Notas do 1° Semestre
+Disciplina ; Nota
+Biologia ; 5000.0
+Matemática ; 3000.5
+Física ; 8000.0
+
+Notas do 2° Semestre
+Disciplina ; Nota
+Biologia ; 9500.0
+Matemática ; 2000.0
+Física ; 7000.5
+
+Notas do 3° Semestre
+Disciplina ; Nota
+Biologia ; 7000.0
+Matemática ; 9000.0
+Física ; 1999.0
+
+Notas do 4° Semestre
+Disciplina ; Nota
+Biologia ; 7000.0
+Matemática ; 9000.0
+Física ; 2000.1
+
+Notas do 5° Semestre
+Disciplina ; Nota
+Biologia ; 7000.0
+Matemática ; 9000.0
+Física ; 2000.1
+
+Notas do 6° Semestre
+Disciplina ; Nota
+Biologia ; 7000.0
+Matemática ; 9000.0
+Física ; 2000.1
+
+Notas do 7° Semestre
+Disciplina ; Nota
+Biologia ; 7000.0
+Matemática ; 9000.0
+Física ; 2000.1
+
+Notas do 8° Semestre
+Disciplina ; Nota
+Biologia ; 7000.0
+Matemática ; 9000.0
+Física ; 5000.1
+
+Notas do 9° Semestre
+Disciplina ; Nota
+Biologia ; 7000.0
+Matemática ; 9000.0
+Física ; 3000.1
+
+Notas do 10° Semestre
+Disciplina ; Nota
+Biologia ; 7000.0
+Matemática ; 9000.0
+Física ; 2000.1

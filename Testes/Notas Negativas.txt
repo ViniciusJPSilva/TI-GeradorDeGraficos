@@ -1,0 +1,48 @@
+﻿Histórico Escolar 5
+Notas do 1° Semestre
+Disciplina ; Nota
+Biologia ; 5.0
+Matemática ; -3.5
+Física ; 8.0
+Geografia ; 2.0
+Historia ; 67.0
+
+Notas do 2° Semestre
+Disciplina ; Nota
+Biologia ; 10.0
+Matemática ; 2.0
+Física ; 7.5
+Geografia ; 6.0
+Historia ; 5.0
+
+Notas do 3° Semestre
+Disciplina ; Nota
+Biologia ; 7.0
+Matemática ; 9.0
+Física ; 2.1
+Geografia ; -4.0
+Historia ; -6.5
+
+Notas do 4° Semestre
+Disciplina ; Nota
+Biologia ; 7.0
+Matemática ; 9.0
+Física ; 2.1
+Geografia ; 4.0
+Historia ; 6.5
+
+Notas do 5° Semestre
+Disciplina ; Nota
+Biologia ; 7.0
+Matemática ; 9.0
+Física ; 2.1
+Geografia ; -4.0
+Historia ; 6.5
+
+Notas do 6° Semestre
+Disciplina ; Nota
+Biologia ; -7.0
+Matemática ; 9.0
+Física ; 2.1
+Geografia ; 4.0
+Historia ; 6.5

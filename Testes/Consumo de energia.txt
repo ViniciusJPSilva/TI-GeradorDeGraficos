@@ -1,0 +1,45 @@
+Consumo de Energia Elétrica (kWh)
+2018
+Mês ; Consumo em kWh
+Janeiro ; 340.0
+Fevereiro ; 280.0
+Março ; 290.0
+Abril ; 340.0
+Maio ; 349.0
+Junho ; 340.0
+Julho ; 360.0
+Agosto ; 255.0
+Setembro ; 380.0
+Outubro ; 375.0
+Novembro ; 355.0
+Dezembro ; 349.0
+
+2017
+Mês ; Consumo em kWh
+Janeiro ; 250.0
+Fevereiro ; 210.0
+Março ; 295.0
+Abril ; 335.0
+Maio ; 310.0
+Junho ; 360.0
+Julho ; 360.0
+Agosto ; 375.0
+Setembro ; 370.0
+Outubro ; 285.0
+Novembro ; 345.0
+Dezembro ; 275.0
+
+2016
+Mês ; Consumo em kWh
+Janeiro ; 250.0
+Fevereiro ; 265.0
+Março ; 245.0
+Abril ; 280.0
+Maio ; 295.0
+Junho ; 320.0
+Julho ; 320.0
+Agosto ; 285.0
+Setembro ; 265.0
+Outubro ; 320.0
+Novembro ; 260.0
+Dezembro ; 300.0

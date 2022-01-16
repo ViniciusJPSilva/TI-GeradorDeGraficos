@@ -1,0 +1,10 @@
+Gasto Total Anual com Energia Elétrica
+Total Anual
+Ano;Gasto em R$
+2013;2065.45
+2014;-2175.70
+2015;-3048.33
+2016;-3220.02
+2017;-3579.53
+2018;-3932.47
+2019;-4129.61

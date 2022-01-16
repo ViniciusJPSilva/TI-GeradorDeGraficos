@@ -1,0 +1,10 @@
+População
+Barbacena
+Cidade ; Num. Habitantes
+2010; 100000
+2015 ; 80000
+
+Antônio Carlos
+Cidade ; Num. Habitantes
+2010 ; 59990
+2015 ; 85000

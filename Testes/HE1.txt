@@ -1,0 +1,18 @@
+﻿Histórico Escolar
+Notas do 1° Semestre
+Disciplina ; Nota
+Biologia ; -500.0
+Matemática ; -300.5
+Física ; 8.0
+
+Notas do 2° Semestre
+Disciplina ; Nota
+Biologia ; 100.0
+Matemática ; -20.0
+Física ; 7.5
+
+Notas do 3° Semestre
+Disciplina ; Nota
+Biologia ; 7.0
+Matemática ; 9.0
+Física ; 2.1

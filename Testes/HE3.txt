@@ -1,0 +1,24 @@
+Histórico Escolar 3
+Notas do 1° Semestre
+Disciplina ; Nota
+Biologia ; 850.5
+Matemática ; 990.5
+Física ; 800.0
+Química ; 250.0
+Inglês ; 400.5
+
+Notas do 2° Semestre
+Disciplina ; Nota
+Biologia; 100.0
+Matemática ; 690.0
+Física ; 700.5
+Química ; 80.5
+Inglês ; 350.5
+
+Notas do 3° Semestre
+Disciplina ; Nota
+Biologia; 200.0
+Matemática ; 290.0
+Física ; 400.5
+Química ; 800.5
+Inglês ; 350.5

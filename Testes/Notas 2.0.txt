@@ -1,0 +1,18 @@
+﻿Histórico Escolar 2.0
+Biologia
+Semestre ; Nota
+1° Semestre ; 0.5
+2° Semestre ; 0.10
+3° Semestre ; 0.7
+
+Matemática
+Semestre ; Nota
+1° Semestre ; 0.3
+2° Semestre ; 0.2
+3° Semestre ; 0.9
+
+Física
+Semestre ; Nota
+1° Semestre ; 0.8
+2° Semestre ; 0.7
+3° Semestre ; 0.2
